@@ -1,14 +1,14 @@
-const {Schema, model}= require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const schema = new Schema({
-    title:{
+    title: {
         type: String,
-        required:true
+        required: true
     },
-    completed:{
-        type:Boolean,
-        default:false
+    completed: {
+        type: Boolean,
+        default: false
     }
 })
 
-module.exports = model('Todos', schema)
+module.exports = model('Todo', schema)
